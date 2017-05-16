@@ -14,6 +14,9 @@
 		D7A930CF1ECACCF700ECAFA9 /* Congratulations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7A930CD1ECACCF700ECAFA9 /* Congratulations.xcdatamodeld */; };
 		D7A930D11ECACCF700ECAFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A930D01ECACCF700ECAFA9 /* Assets.xcassets */; };
 		D7A930D41ECACCF700ECAFA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A930D21ECACCF700ECAFA9 /* LaunchScreen.storyboard */; };
+		D7A930E11ECACDCB00ECAFA9 /* RewardSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A930DD1ECACDCB00ECAFA9 /* RewardSuccess.m */; };
+		D7A930E21ECACDCB00ECAFA9 /* RewardSuccessWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A930DF1ECACDCB00ECAFA9 /* RewardSuccessWindow.m */; };
+		D7A930E31ECACDCB00ECAFA9 /* success_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A930E01ECACDCB00ECAFA9 /* success_star@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,11 @@
 		D7A930D01ECACCF700ECAFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7A930D31ECACCF700ECAFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7A930D51ECACCF700ECAFA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A930DC1ECACDCB00ECAFA9 /* RewardSuccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardSuccess.h; sourceTree = "<group>"; };
+		D7A930DD1ECACDCB00ECAFA9 /* RewardSuccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardSuccess.m; sourceTree = "<group>"; };
+		D7A930DE1ECACDCB00ECAFA9 /* RewardSuccessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardSuccessWindow.h; sourceTree = "<group>"; };
+		D7A930DF1ECACDCB00ECAFA9 /* RewardSuccessWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardSuccessWindow.m; sourceTree = "<group>"; };
+		D7A930E01ECACDCB00ECAFA9 /* success_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success_star@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		D7A930C01ECACCF700ECAFA9 /* Congratulations */ = {
 			isa = PBXGroup;
 			children = (
+				D7A930DB1ECACDA800ECAFA9 /* congratution */,
 				D7A930C41ECACCF700ECAFA9 /* AppDelegate.h */,
 				D7A930C51ECACCF700ECAFA9 /* AppDelegate.m */,
 				D7A930C71ECACCF700ECAFA9 /* ViewController.h */,
@@ -80,6 +89,18 @@
 				D7A930C21ECACCF700ECAFA9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7A930DB1ECACDA800ECAFA9 /* congratution */ = {
+			isa = PBXGroup;
+			children = (
+				D7A930DC1ECACDCB00ECAFA9 /* RewardSuccess.h */,
+				D7A930DD1ECACDCB00ECAFA9 /* RewardSuccess.m */,
+				D7A930DE1ECACDCB00ECAFA9 /* RewardSuccessWindow.h */,
+				D7A930DF1ECACDCB00ECAFA9 /* RewardSuccessWindow.m */,
+				D7A930E01ECACDCB00ECAFA9 /* success_star@2x.png */,
+			);
+			name = congratution;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +164,7 @@
 			files = (
 				D7A930D41ECACCF700ECAFA9 /* LaunchScreen.storyboard in Resources */,
 				D7A930D11ECACCF700ECAFA9 /* Assets.xcassets in Resources */,
+				D7A930E31ECACDCB00ECAFA9 /* success_star@2x.png in Resources */,
 				D7A930CC1ECACCF700ECAFA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A930E11ECACDCB00ECAFA9 /* RewardSuccess.m in Sources */,
 				D7A930C91ECACCF700ECAFA9 /* ViewController.m in Sources */,
+				D7A930E21ECACDCB00ECAFA9 /* RewardSuccessWindow.m in Sources */,
 				D7A930CF1ECACCF700ECAFA9 /* Congratulations.xcdatamodeld in Sources */,
 				D7A930C61ECACCF700ECAFA9 /* AppDelegate.m in Sources */,
 				D7A930C31ECACCF700ECAFA9 /* main.m in Sources */,

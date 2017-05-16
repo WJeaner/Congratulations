@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Congratulations
 //
-//  Created by dev on 2017/5/16.
+//  Created by Jeaner on 2017/5/16.
 //  Copyright © 2017年 Jeaner. All rights reserved.
 //
 

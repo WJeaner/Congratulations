@@ -1,13 +1,15 @@
 //
 //  RewardSuccess.m
-//  GameMall
+//  Congratulations
 //
-//  Created by zyc on 16/8/2.
-//  Copyright © 2016年 andy. All rights reserved.
+//  Created by Jeaner on 2017/5/16.
+//  Copyright © 2017年 Jeaner. All rights reserved.
 //
 
 #import "RewardSuccess.h"
 #import "RewardSuccessWindow.h"
+static CGFloat SuccessWindow_width = 270;
+static CGFloat SuccessWindow_hight = 170;
 
 #define EmitterColor_Red      [UIColor colorWithRed:255/255.0 green:0 blue:139/255.0 alpha:1]
 #define EmitterColor_Yellow   [UIColor colorWithRed:251/255.0 green:197/255.0 blue:13/255.0 alpha:1]
@@ -15,7 +17,7 @@
 
 @implementation RewardSuccess
 
-+ (void)show
++ (void)showWithTitle: (NSString *)title withExperience:(NSInteger)num
 {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
 
@@ -23,7 +25,28 @@
     backgroundView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
     [window addSubview:backgroundView];
     
-    RewardSuccessWindow *successWindow = [[RewardSuccessWindow alloc] initWithFrame:CGRectZero];
+
+    
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    
+    //创建一个view
+    RewardSuccessWindow *successWindow=[[RewardSuccessWindow alloc]init];
+    successWindow.frame=CGRectMake((screenSize.width - SuccessWindow_width)/2.0 , (screenSize.height - SuccessWindow_hight)/2.0, SuccessWindow_width, SuccessWindow_hight);
+    
+    //对里面的属性进行赋值,这是title的属性
+    successWindow.titleLabel.text=title;
+    
+    //这个是获得经验的属性
+    NSString *numString = [NSString stringWithFormat:@"获得经验:+%ld",(long)num];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:numString];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:15] range:NSMakeRange(0, numString.length)];
+    [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"MarkerFelt-Thin" size:35] range:NSMakeRange(5,3)];
+    NSShadow *shadow =[[NSShadow alloc] init];
+    shadow.shadowOffset = CGSizeMake(1, 3);
+    [attributedString addAttribute:NSShadowAttributeName value:shadow range:NSMakeRange(5,3)];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor yellowColor] range:NSMakeRange(5,3)];
+    successWindow.expLabel.attributedText=attributedString;
+    
     [backgroundView addSubview:successWindow];
     
     //缩放

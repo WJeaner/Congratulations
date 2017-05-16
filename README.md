@@ -11,4 +11,6 @@
 使用起来十分简单,一键调用;
 
 下面是显示图:
-![image](https://github.com/575327313@qq.com/Congratulations/Congratulations/220953s1qkbiwe8z1xbxeq.gif) 
+
+
+![image](https://github.com/WJeaner/Congratulations/raw/master/Congratulations/220953s1qkbiwe8z1xbxeq.gif)
